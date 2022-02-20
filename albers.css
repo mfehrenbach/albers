@@ -8,7 +8,7 @@
 
 #albers section,
 #albers div {
-	border-radius: 2px; /* Make the corners less sharp. */
+	border-radius: 1px; /* Make the corners less sharp. */
 }
 
 /* All the nested divs. */
