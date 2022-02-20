@@ -11,7 +11,7 @@ em {
 /* This seems like the right semantic element. */
 figure {
 	margin: 0 auto; /* Centered in the page. */
-	width: 600px; /* The width is on the container now so the caption is also constrained. */
+	width: 500px; /* The width is on the container now so the caption is also constrained. */
 }
 
 figcaption {
@@ -21,7 +21,7 @@ figcaption {
 
 section {
 	/* There is only a shorthand for `box-shadow` and it is annoying to read! */
-	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
 
@@ -29,7 +29,7 @@ section {
 /* Since I will have multiple, I added an ID to target my first work. */
 #albers section {
 	background-color: rgb(233, 233, 227); /* I used the “Digital Color Meter” on my Mac to get these exact values. */
-	height: 600px; /* Square, with the height above. */
+	height: 500px; /* Square, with the height above. */
 	padding: 18%; /* Even inset all-around. */
 }
 
