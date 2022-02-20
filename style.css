@@ -84,29 +84,84 @@ section {
 /* All 64 children! */
 #kelly div {
 	background-color: #f4f5f0; /* Start with the white/neutral ones. */
-	border-top: solid 1px rgba(255, 255, 255, 0.333); /* Little highlight on the top. */
-	box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.25); /* `inset` shadow for a slight edge on them. */
+	border-top: solid 1px rgba(255, 255, 255, 0.1); /* Little highlight on the top. */
+	box-shadow: inset -0.5px -0.5px 1px rgba(0, 0, 0, 0.25); /* `inset` shadow for a slight edge on them. */
 	float: left; /* So they will flow next to each other. */
 	height: 12.5%; /* 1/8. */
 	width: 12.5%;
 }
 
 #kelly div:nth-child(1) {
-	background-color: #4f4441; /* Again, these are all copied from the “Digital Color Meter”. */
+	background-color: #51423f; /* Again, these are all copied from the “Digital Color Meter”. */
 }
 
-#kelly div:nth-child(3) {
-	background-color: #867aa7;
+#kelly div:nth-child(3),
+#kelly div:nth-child(54) {
+	background-color: #8778a7; /* Lavender. */
 }
 
-#kelly div:nth-child(5) {
-	background-color: #373535;
+#kelly div:nth-child(5),
+#kelly div:nth-child(11),
+#kelly div:nth-child(16),
+#kelly div:nth-child(17),
+#kelly div:nth-child(30),
+#kelly div:nth-child(35),
+#kelly div:nth-child(48),
+#kelly div:nth-child(53),
+#kelly div:nth-child(57),
+#kelly div:nth-child(62) {
+	background-color: #373535; /* The dark/black ones. */
 }
 
-#kelly div:nth-child(6) {
-	background-color: #b27542;
+#kelly div:nth-child(6),
+#kelly div:nth-child(24) {
+	background-color: #bd7136; /* Orangey. */
 }
 
-#kelly div:nth-child(8) {
-	background-color: #6391b2;
+#kelly div:nth-child(8),
+#kelly div:nth-child(27),
+#kelly div:nth-child(44) {
+	background-color: #5493b5; /* Eames-y blue. */
+}
+
+#kelly div:nth-child(10),
+#kelly div:nth-child(41),
+#kelly div:nth-child(47) {
+	background-color: #3c6d4f; /* Forest-y green. */
+}
+
+#kelly div:nth-child(13),
+#kelly div:nth-child(60) {
+	background-color: #e5d956; /* Bit of yellow. */
+}
+
+#kelly div:nth-child(15),
+#kelly div:nth-child(50),
+#kelly div:nth-child(63) {
+	background-color: #bf7284; /* Pink. */
+}
+
+#kelly div:nth-child(20),
+#kelly div:nth-child(40) {
+	background-color: #355087; /* Darker blue. */
+}
+
+#kelly div:nth-child(25),
+#kelly div:nth-child(38) {
+	background-color: #8e3935; /* Nice red. */
+}
+
+#kelly div:nth-child(29),
+#kelly div:nth-child(51) {
+	background-color: #92bd8b; /* Lighter green. */
+}
+
+#kelly div:nth-child(31),
+#kelly div:nth-child(34),
+#kelly div:nth-child(59) {
+	background-color: #4c3f5d; /* Darker purple. */
+}
+
+#kelly div:nth-child(64) {
+	background-color: #313346; /* Even darker blue. */
 }
