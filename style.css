@@ -16,7 +16,7 @@ figure {
 
 /* Space for the lower works. */
 figure:not(:first-child) {
-	margin-top: 200px;
+	margin-top: 100px;
 }
 
 /* This is the corresponding semantic caption element. */
