@@ -12,26 +12,48 @@ em {
 /* This seems like the right semantic element. */
 figure {
 	margin: 0 auto; /* Centered in the page. */
-	max-width: 600px; /* Don’t get too big. */
+	width: 600px; /* The width is on the container now so the caption is also constrained. */
 }
+
+
 
 /* Since I will have multiple, I added an ID to target my first work. */
 #albers section {
-	background-color: wheat;
-	height: 600px;
-	padding: 50px;
+	background-color: rgba(233, 233, 227); /* I used the “Digital Color Meter” on my Mac to get these exact values. */
+	height: 600px; /* Square, with the height above. */
+	padding: 18%; /* Even inset all-around. */
 }
 
-#albers section > div {
-	background-color: dodgerblue;
-	padding: 50px;
-}
-
-#albers section > div > div {
-	background-color: gold;
-}
-
+#albers section,
 #albers div {
-	height: 100%;
+	border-radius: 2px; /* Make the corners less sharp. */
+}
+
+/* All the nested divs. */
+#albers div {
+	height: 100%; /* Fill the parent. This works since we have a declared height ancestor. */
+	padding-bottom: 5%; /* Different inset on each side for the distinct downward look. */
+	padding-left: 10%; /* And using a relative unit means I can share this for all the `div` levels. */
+	padding-right: 10%;
+	padding-top: 15%;
 	width: 100%;
+}
+
+/* Just the first nested level. The ">" combinator is for immediate children. */
+#albers section > div {
+	background-color: rgba(169, 196, 224);
+}
+
+/* Second, and so on. */
+#albers section > div > div {
+	background-color: rgba(173, 172, 171);
+}
+
+#albers section > div > div > div {
+	background-color: rgba(200, 181, 110);
+}
+
+/* I probably should have used classes, this is getting hard to read. */
+#albers section > div > div > div > div {
+	background-color: rgba(223, 186, 76);
 }
