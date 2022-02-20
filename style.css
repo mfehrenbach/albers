@@ -14,9 +14,15 @@ figure {
 	width: 500px; /* The width is on the container now so the caption is also constrained. */
 }
 
+/* Space for the lower works. */
+figure:not(:first-child) {
+	margin-top: 200px;
+}
+
+/* This is the corresponding semantic caption element. */
 figcaption {
 	margin-top: 20px;
-	color: rgba(0, 0, 0, 0.25); /* Semi-transparent black. */
+	color: rgba(0, 0, 0, 0.33); /* Semi-transparent black. */
 }
 
 section {
@@ -65,4 +71,10 @@ section {
 /* I probably should have used classes, this is getting hard to read. */
 #albers section > div > div > div > div {
 	background-color: rgb(223, 186, 76);
+}
+
+
+
+#kelly section {
+	height: 500px;
 }
