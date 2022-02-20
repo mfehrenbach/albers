@@ -1,7 +1,7 @@
 /* Since I will have multiple, I added an ID to target my first work. */
 #albers section {
 	background-color: #f1f0ea; /* I used the “Digital Color Meter” on my Mac to get these exact values. */
-	height: 200px; /* Square. */
+	height: 200px; /* Let’s make this smaller to reflect its actual size. */
 	width: 200px; /* Square. */
 	padding: 36px; /* Even inset all-around. */
 }
