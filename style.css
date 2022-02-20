@@ -16,14 +16,19 @@ figure {
 
 figcaption {
 	margin-top: 20px;
-	color: darkgray;
+	color: rgba(0, 0, 0, 0.25); /* Semi-transparent black. */
+}
+
+section {
+	/* There is only a shorthand for `box-shadow` and it is annoying to read! */
+	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.15);
 }
 
 
 
 /* Since I will have multiple, I added an ID to target my first work. */
 #albers section {
-	background-color: rgba(233, 233, 227); /* I used the “Digital Color Meter” on my Mac to get these exact values. */
+	background-color: rgb(233, 233, 227); /* I used the “Digital Color Meter” on my Mac to get these exact values. */
 	height: 600px; /* Square, with the height above. */
 	padding: 18%; /* Even inset all-around. */
 }
@@ -45,19 +50,19 @@ figcaption {
 
 /* Just the first nested level. The ">" combinator is for immediate children. */
 #albers section > div {
-	background-color: rgba(169, 196, 224);
+	background-color: rgb(169, 196, 224);
 }
 
 /* Second, and so on. */
 #albers section > div > div {
-	background-color: rgba(173, 172, 171);
+	background-color: rgb(173, 172, 171);
 }
 
 #albers section > div > div > div {
-	background-color: rgba(200, 181, 110);
+	background-color: rgb(200, 181, 110);
 }
 
 /* I probably should have used classes, this is getting hard to read. */
 #albers section > div > div > div > div {
-	background-color: rgba(223, 186, 76);
+	background-color: rgb(223, 186, 76);
 }
