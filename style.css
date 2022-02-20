@@ -1,18 +1,22 @@
 body {
 	background-color: white;
 	font-family: sans-serif;
-	padding: 100px 24px;
+	padding: 100px 24px; /* More on top/bottom, less on sides. */
 }
 
-/* Restores italics, cleared by my reset. */
 em {
-	font-style: italic;
+	font-style: italic; /* Restores italics, cleared by my reset. */
 }
 
 /* This seems like the right semantic element. */
 figure {
 	margin: 0 auto; /* Centered in the page. */
 	width: 600px; /* The width is on the container now so the caption is also constrained. */
+}
+
+figcaption {
+	margin-top: 20px;
+	color: darkgray;
 }
 
 
