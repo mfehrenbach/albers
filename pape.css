@@ -3,10 +3,13 @@
 }
 
 #pape section {
+	background-color: #353434; /* The black bands are our background. */
 	height: 145px; /* Square canvases. */
 	position: relative; /* The `clear` make a new stacking context, so this keeps order right. */
 	width: 145px;
 }
+
+
 
 #pape section:not(:last-child) {
 	margin-bottom: 10px; /* Space between the rows. */
@@ -40,4 +43,29 @@
 
 #pape section:nth-child(8) {
 	margin-right: auto; /* Pushed to the left. */
+}
+
+
+#pape div {
+	background-color: #dddbda;
+	height: 100%;
+	width: calc(50% - 5px); /* This is a new, `calc` let’s us do math! */
+}
+
+#pape div:first-child {
+	float: left; /* Let them sit next to each other. */
+}
+
+#pape div:last-child {
+	float: right; /* Alongside to the right. */
+}
+
+/* Introducing classes to easily apply across elements. */
+#pape .horizontal div {
+	height: calc(50% - 5px); /* With the class these are more specific. */
+	width: 100%;
+}
+
+#pape .horizontal div:last-child {
+	margin-top: 10px; /* Space above the bottom ones. */
 }
