@@ -27,5 +27,5 @@ figcaption {
 
 section {
 	/* There is only a shorthand for `box-shadow` and it is annoying to read! */
-	box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.15);
 }
