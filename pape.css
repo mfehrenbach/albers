@@ -1,8 +1,43 @@
 #pape main {
-	width: 300px;
+	width: 300px; /* Added a container for the group of canvases. */
 }
 
 #pape section {
-	height: 140px;
-	width: 140px;
+	height: 145px; /* Square canvases. */
+	position: relative; /* The `clear` make a new stacking context, so this keeps order right. */
+	width: 145px;
+}
+
+#pape section:not(:last-child) {
+	margin-bottom: 10px; /* Space between the rows. */
+}
+
+#pape section:nth-child(1),
+#pape section:nth-child(7) {
+	margin-left: auto; /* Pushes these to the right. */
+}
+
+#pape section:nth-child(2),
+#pape section:nth-child(5) {
+	float: left; /* Allows the next one to sit alongside. */
+}
+
+#pape section:nth-child(3),
+#pape section:nth-child(6) {
+	float: right; /* Same, alongside to the right. */
+}
+
+#pape section:nth-child(4),
+#pape section:nth-child(7) {
+	clear: both; /* Clear the floats with a new line. */
+}
+
+#pape section:nth-child(4),
+#pape section:nth-child(9) {
+	margin-left: auto; /* Centered. */
+	margin-right: auto;
+}
+
+#pape section:nth-child(8) {
+	margin-right: auto; /* Pushed to the left. */
 }
