@@ -1,11 +1,18 @@
 body {
 	background-color: white;
+	font-family: sans-serif;
 	padding: 100px 24px;
 }
 
+/* Restores italics, cleared by my reset. */
+em {
+	font-style: italic;
+}
+
+/* This seems like the right semantic element. */
 figure {
-	margin: 0 auto;
-	width: 600px;
+	margin: 0 auto; /* Centered in the page. */
+	max-width: 600px; /* Don’t get too big. */
 }
 
 section {
