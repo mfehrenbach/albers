@@ -1,3 +1,26 @@
-p {
-  color: orange;
+body {
+  background-color: black;
+  padding-top: 100px;
+}
+
+section {
+  background-color: wheat;
+  height: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  width: 600px;
+}
+
+section > div {
+  background-color: dodgerblue;
+  padding: 50px;
+}
+
+section > div > div {
+  background-color: gold;
+}
+
+div {
+  height: 100%;
+  width: 100%;
 }
