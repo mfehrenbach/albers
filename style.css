@@ -15,22 +15,23 @@ figure {
 	max-width: 600px; /* Don’t get too big. */
 }
 
-section {
+/* Since I will have multiple, I added an ID to target my first work. */
+#albers section {
 	background-color: wheat;
 	height: 600px;
 	padding: 50px;
 }
 
-section > div {
+#albers section > div {
 	background-color: dodgerblue;
 	padding: 50px;
 }
 
-section > div > div {
+#albers section > div > div {
 	background-color: gold;
 }
 
-div {
+#albers div {
 	height: 100%;
 	width: 100%;
 }
