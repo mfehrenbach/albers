@@ -75,10 +75,10 @@
 
 #pape div:first-child,
 #pape .red-first div:last-child {
-	background-color: #dddbda; /* The white sections. */
+	background-color: #eae9e8; /* The white sections. */
 }
 
 #pape div:last-child,
 #pape .red-first div:first-child {
-		background-color: #b65525; /* The rusty red areas. */
+		background-color: #c25c27; /* The rusty red areas. */
 }
